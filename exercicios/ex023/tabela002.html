@@ -13,6 +13,7 @@
     table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
     }
 
     td, th {
@@ -20,22 +21,38 @@
         padding: 10px;
     }
 
-    .num {
-        text-align: right;
-    }
-    
     caption {
         font-size: 1.5em;
         font-weight: bold;
         padding: 10px;
         background-color: lightgray;
-
     }
 
     thead, tfoot {
         background-color: #383838;
         color: white;
     }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: #383838;
+    }
+
+    tbody > tr:nth-child(odd) { /*2n-1*/
+        background-color: white;
+        font-weight: bold;
+    }
+
+    tbody > tr:nth-child(even) { /*2n*/  /*ODD = par e even = impar*/
+        background-color: lightgray;
+        text-decoration: underline;
+    }
+
+    td.num {
+        text-align: right;
+    }
+    
 </style>
 <body>
     <h1>Uso de tabelas grandes</h1>
@@ -173,8 +190,18 @@
                 <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.146.125</strong></td>
             </tr>
-
         </TFOOt>
     </Table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus reiciendis, inventore ipsum alias corrupti vero deserunt minima, eligendi eos architecto ut? Quidem temporibus fuga nostrum optio. Ratione, repellendus unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde ratione laudantium dolorum iure officiis dignissimos, recusandae sunt assumenda quis laboriosam commodi eos vel repellat minima modi non consequuntur. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque ea excepturi asperiores, impedit ducimus cum aliquam? Animi, natus modi. Atque vero, distinctio quod enim perferendis eos labore voluptatibus nemo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quia sint possimus repellat maiores dolor provident consequatur, facere voluptate sunt, quas dolorem, error fugit culpa quam? Aut quos id eaque?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus reiciendis, inventore ipsum alias corrupti vero deserunt minima, eligendi eos architecto ut? Quidem temporibus fuga nostrum optio. Ratione, repellendus unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde ratione laudantium dolorum iure officiis dignissimos, recusandae sunt assumenda quis laboriosam commodi eos vel repellat minima modi non consequuntur. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque ea excepturi asperiores, impedit ducimus cum aliquam? Animi, natus modi. Atque vero, distinctio quod enim perferendis eos labore voluptatibus nemo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quia sint possimus repellat maiores dolor provident consequatur, facere voluptate sunt, quas dolorem, error fugit culpa quam? Aut quos id eaque?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus reiciendis, inventore ipsum alias corrupti vero deserunt minima, eligendi eos architecto ut? Quidem temporibus fuga nostrum optio. Ratione, repellendus unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde ratione laudantium dolorum iure officiis dignissimos, recusandae sunt assumenda quis laboriosam commodi eos vel repellat minima modi non consequuntur. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque ea excepturi asperiores, impedit ducimus cum aliquam? Animi, natus modi. Atque vero, distinctio quod enim perferendis eos labore voluptatibus nemo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quia sint possimus repellat maiores dolor provident consequatur, facere voluptate sunt, quas dolorem, error fugit culpa quam? Aut quos id eaque?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus reiciendis, inventore ipsum alias corrupti vero deserunt minima, eligendi eos architecto ut? Quidem temporibus fuga nostrum optio. Ratione, repellendus unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde ratione laudantium dolorum iure officiis dignissimos, recusandae sunt assumenda quis laboriosam commodi eos vel repellat minima modi non consequuntur. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque ea excepturi asperiores, impedit ducimus cum aliquam? Animi, natus modi. Atque vero, distinctio quod enim perferendis eos labore voluptatibus nemo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quia sint possimus repellat maiores dolor provident consequatur, facere voluptate sunt, quas dolorem, error fugit culpa quam? Aut quos id eaque?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus reiciendis, inventore ipsum alias corrupti vero deserunt minima, eligendi eos architecto ut? Quidem temporibus fuga nostrum optio. Ratione, repellendus unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde ratione laudantium dolorum iure officiis dignissimos, recusandae sunt assumenda quis laboriosam commodi eos vel repellat minima modi non consequuntur. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque ea excepturi asperiores, impedit ducimus cum aliquam? Animi, natus modi. Atque vero, distinctio quod enim perferendis eos labore voluptatibus nemo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quia sint possimus repellat maiores dolor provident consequatur, facere voluptate sunt, quas dolorem, error fugit culpa quam? Aut quos id eaque?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus reiciendis, inventore ipsum alias corrupti vero deserunt minima, eligendi eos architecto ut? Quidem temporibus fuga nostrum optio. Ratione, repellendus unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde ratione laudantium dolorum iure officiis dignissimos, recusandae sunt assumenda quis laboriosam commodi eos vel repellat minima modi non consequuntur. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque ea excepturi asperiores, impedit ducimus cum aliquam? Animi, natus modi. Atque vero, distinctio quod enim perferendis eos labore voluptatibus nemo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quia sint possimus repellat maiores dolor provident consequatur, facere voluptate sunt, quas dolorem, error fugit culpa quam? Aut quos id eaque?</p>
 </body>
 </html>
